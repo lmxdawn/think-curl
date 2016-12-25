@@ -10,10 +10,10 @@
 // +----------------------------------------------------------------------
 
 /**
- * 把资源强制变为图片
+ * 把资源强制变为doc文档形式
  * Class TestImages
  */
-class WorldImages{
+class World{
 
     private  $config = array(
 
@@ -86,7 +86,7 @@ $html_data = $curl->send_http('https://segmentfault.com/','get');
 
 //var_dump($html_data);
 
-$image = WorldImages::getInstance();
+$image = World::getInstance();
 
 $image->down($html_data,'test');
 
