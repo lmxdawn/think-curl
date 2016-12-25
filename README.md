@@ -5,7 +5,7 @@
 
 ## 使用简单示例
 
-> $curl = lmxdawn\curl\Curl::getInstance();
+	$curl = lmxdawn\curl\Curl::getInstance();
 
-> $html_data = $curl->send_http('https://segmentfault.com/','get');
+	$html_data = $curl->send_http('https://segmentfault.com/','get');
 
