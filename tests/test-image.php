@@ -76,15 +76,14 @@ class World{
 }
 
 // 载入 curl 请求类
-require './src/Curl.php';
+require '../src/Curl.php';
 
 header("Content-type:text/html;charset=utf-8");
 
-$curl = lmxdawn\curl\Curl::getInstance();
+$res = lmxdawn\curl\Curl::http('https://api.weibo.com/2/comments/show.json',['json' => '{"hh":123}'],'GET');
 
-$html_data = $curl->send_http('https://segmentfault.com/','get');
 
-//var_dump($html_data);
+var_dump($res);exit;
 
 $image = World::getInstance();
 
