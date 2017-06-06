@@ -17,7 +17,7 @@ class Curl {
      * @param  array $params 请求参数
      * @param  string $method 请求方法GET/POST
      * @return array $data   响应数据
-     * @throws Exception
+     * @throws \Exception
      */
     public static function http($url, $params = [], $method = 'GET', $header = [], $multi = false)
     {
